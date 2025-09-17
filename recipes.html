@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recipes</title>
+    <link rel="stylesheet" href="style/bar.css">
+    <link rel="stylesheet" href="style/recipes.css">
+    <link rel="stylesheet" href="style/categories.css">
+    <link rel="stylesheet" href="style/registration.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+            <a class="dropbtn" data-filter="all" href="main.html" title="transition_main"><img class="burger_img" src="img/main/burger1.png" alt=""></a>
+            <div class="drop-list">
+                <a href="photo_report.html">Фотоотчеты и комментарии</a>
+                <a href="advice.html">Советы</a>
+                
+                <p>ИНСТРУМЕНТЫ</p>
+
+                <a class="categories_open" href="#">Категории рецептов</a>
+                <a href="product_table.html">Таблицы продуктов</a>
+                <a href="culinary_dictionary.html">Кулинарный словар</a>
+                </ul>
+            </div>
+        </div>
+        
+        <a class="right entrance_open">Войти</a>
+
+        <div class="dropdown right user_icon">
+            <div class="dropbtn drop_img"><img class="user_img" src="img/main/user.png" alt="user"></div>
+            <div class="drop-list drop_end">
+                <a href="my_page.html">Моя страница</a>
+                <a href="add_recipe.html">Добавить рецепт</a>
+                <a href="my_page.html?my_recipe=true">Мои рецепты</a>
+                <a href="my_page.html">Рецептосохранялка</a>
+                <a class="log_out_account">Выйты</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories_fon">
+        <div class="categories">
+            <div class="categories_close">
+                <img src="img/main/close.png" alt="close">
+            </div>
+            <div data-filter="snack"><img src="img/categories/snack.png" alt="snack">
+                <p>Закуски</p>
+            </div>
+            <div data-filter="garnish"><img src="img/categories/garnish.png" alt="garnish">
+                <p>Гарнир</p>
+            </div>
+            <div data-filter="drinks"><img src="img/categories/drinks.png" alt="drinks">
+                <p>Напитки</p>
+            </div>
+            <div data-filter="gravy"><img src="img/categories/gravy.png" alt="gravy">
+                <p>Соусы</p>
+            </div>
+            <div data-filter="salad"><img src="img/categories/salad.png" alt="salad">
+                <p>Салаты</p>
+            </div>
+            <div data-filter="dessert"><img src="img/categories/dessert.png" alt="dessert">
+                <p>Десерты</p>
+            </div>
+            <div data-filter="dough"><img src="img/categories/dough.png" alt="dough">
+                <p>Тесто домашнее</p>
+            </div>
+            <div data-filter="baking"><img src="img/categories/baking.png" alt="baking">
+                <p>Выпечка</p>
+            </div>
+            <div data-filter="sandwich"><img src="img/categories/sandwich.png" alt="sandwich">
+                <p>Бутерброды</p>
+            </div>
+            <div data-filter="cake"><img src="img/categories/cake.png" alt="cake">
+                <p>Торты домашние</p>
+            </div>
+            <div data-filter="soup"><img src="img/categories/soup.png" alt="soup">
+                <p>Супы</p>
+            </div>
+            <div data-filter="work_piece"><img src="img/categories/work_piece.png" alt="work_piece">
+                <p>Заготовки на зиму</p>
+            </div>
+            <div data-filter="second_dish"><img src="img/categories/food_tray.png" alt="second_dish">
+                <p>Вторые блюда</p>
+            </div>
+            <hr>
+            </hr>
+            <div data-filter="egg"><img src="img/categories/egg.png" alt="egg">
+                <p>яйца</p>
+            </div>
+            <div data-filter="berries"><img src="img/categories/cherry.png" alt="berries">
+                <p>Из ягод</p>
+            </div>
+            <div data-filter="meat"><img src="img/categories/meat.png" alt="meat">
+                <p>Мясо и мясопродукты</p>
+            </div>
+            <div data-filter="nuts"><img src="img/categories/walnut.png" alt="nuts">
+                <p>С орехами</p>
+            </div>
+            <div data-filter="semi_finished_product"><img src="img/categories/sausage.png" alt="semi_finished_product">
+                <p>Полуфабрикаты</p>
+            </div>
+            <div data-filter="sweet"><img src="img/categories/cupcake.png" alt="sweet">
+                <p>Сладкое</p>
+            </div>
+            <div data-filter="fish"><img src="img/categories/fish.png" alt="fish">
+                <p>Из рыбы</p>
+            </div>
+            <div data-filter="cereal"><img src="img/categories/cereal.png" alt="cereal">
+                <p>Крупы, злаки, крупяные и зерновые изделия</p>
+            </div>
+            <div data-filter="seafood"><img src="img/categories/prawns.png" alt="seafood">
+                <p>С морепродуктами</p>
+            </div>
+            <div data-filter="pasta"><img src="img/categories/pasta.png" alt="pasta">
+                <p>Макаронные изделия</p>
+            </div>
+            <div data-filter="cheese"><img src="img/categories/cheese.png" alt="cheese">
+                <p>С сыром</p>
+            </div>
+            <div data-filter="beans"><img src="img/categories/beans.png" alt="beans">
+                <p>Из бобовых</p>
+            </div>
+            <div data-filter="milk"><img src="img/categories/milk_can.png" alt="milk">
+                <p>Молочные продукты</p>
+            </div>
+            <div data-filter="breads"><img src="img/categories/breads.png" alt="breads">
+                <p>Хлебобулочные изделия</p>
+            </div>
+            <div data-filter="mushrooms"><img src="img/categories/mushrooms.png" alt="mushrooms">
+                <p>Грибы</p>
+            </div>
+            <div data-filter="fat"><img src="img/categories/decanter.png" alt="fat">
+                <p>Жир любой</p>
+            </div>
+            <div data-filter="vegetable"><img src="img/categories/vegetable.png" alt="vegetable">
+                <p>С овощами</p>
+            </div>
+            <div data-filter="alcohol"><img src="img/categories/wine_glass.png" alt="alcohol">
+                <p>Алкоголь</p>
+            </div>
+            <div data-filter="flour"><img src="img/categories/flour.png" alt="flour">
+                <p>Из муки</p>
+            </div>
+            <div data-filter="fruits"><img src="img/categories/fruits.png" alt="fruits">
+                <p>Фрукты</p>
+            </div>
+            <div data-filter="dried_fruits"><img src="img/categories/dried_fruits.png" alt="dried_fruits">
+                <p>Сухофрукты</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="registration_fon">
+        <form action="#" method="post" class="entrance">
+            <div class="entrance_close"><img src="img/main/close.png" alt="close" class="registration_close"></div>
+            <p class="registration_text">ВХОД</p>
+            <div class="entrance_input">
+                <label for="entrance_email" class="email_text">Е-майл:</label><input type="email" name="entrance_email"
+                    id="entrance_email" title="email" tabindex="1" required>
+                <label for="entrance_password" class="password_text">Пароль:</label><input type="password"
+                    name="entrance_password" id="entrance_password" title="password" tabindex="2" required>
+                <p class="entrance_false">Е-майл или пароль введен неправильно</p>
+            </div>
+            <input type="submit" name="entrance_submit" id="entrance_submit" title="entrance_submit" value="Вход"
+                tabindex="3">
+
+            <p class="forgot_password_open">Забыли свой пароль?</p>
+            <p class="registration_open">Еще не зарегистрированы?</p>
+        </form>
+
+        <form action="#" method="post" class="registration">
+            <div class="registration_top"><img src="img/main/back_button.png" alt="back_button"
+                    class="registration_back_button"><img src="img/main/close.png" alt="close"
+                    class="registration_close"></div>
+            <p class="registration_text">Регистрация на сайте</p>
+            <div class="registration_input">
+                <label for="registration_name">Имя на сайте:</label><input type="text" id="registration_name"
+                    name="registration_name" title="registration_name" tabindex="1" required>
+                <label for="registration_email">Е-майл:</label><input type="email" id="registration_email"
+                    name="registration_email" title="registration_email" tabindex="2" required>
+                <label for="registration_password">Пароль:</label><input type="password" id="registration_password"
+                    name="registration_password" title="registration_password" tabindex="3" required>
+                <label for="registration_confirmation_password">Подтверждение пароля:</label><input type="password"
+                    id="registration_confirmation_password" name="registration_confirmation_password"
+                    title="registration_confirmation_password" tabindex="4" required>
+                <p class="registration_false"></p>
+            </div>
+            <center><input type="submit" id="registration_submit" name="registration_submit" title="registration_submit"
+                    value="Регистрация"></center>
+        </form>
+
+        <form action="#" method="post" class="forgot_password">
+            <div class="registration_top forgot_password_top"><img src="img/main/back_button.png" alt="back_button"
+                    class="registration_back_button"><img src="img/main/close.png" alt="close"
+                    class="registration_close"></div>
+            <p class="registration_text">Восстановление пароля</p>
+            <p>Введите ваш адрес электронной почты (e-mail) и нажмите на кнопку "Выслать новый пароль".<br> В течение
+                пары минут вы получите на него ссылку для обновления вашего пароля.</p>
+            <label for="forgot_password_input">Введите е-майл:</label><input type="email" id="forgot_password_input"
+                name="forgot_password_input" title="forgot_password_input" required>
+            <input type="submit" id="forgot_password_submit" name="forgot_password_submit"
+                title="forgot_password_submit" value="Выслать ссылку для обновления пароля">
+        </form>
+    </div>
+
+    <div class="page">
+        <div class="main_content"></div>
+        <!-- <div class="main_content">
+
+                <h1 class="heading">Селедка под шубой с яблоком и яйцом классическая</h1>
+                <div class="recipe_img"><img class="main_img"
+                        src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/0.jpg"
+                        alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_0"><img
+                        src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/1.jpg"
+                        alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_1"><img
+                        src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/2.jpg"
+                        alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_2"><img
+                        src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/3.jpg"
+                        alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_3">
+                    <div class="like_dislike"><img class="like_btn" src="img/main/like.png" alt="like">
+                        <img class="dislike_btn" src="img/main/like.png" alt="dislike">
+                        <div class="like_count">+140</div>
+                    </div>
+                    <div class="bookmark_views">
+                        <div class="views">3242</div>
+                        <div class="bookmark">324</div><img class="bookmark_img" src="img/main/bookmark.png"
+                            alt="bookmark_img">
+                    </div>
+                </div>
+                <div class="composition">
+                    <h2>Состав / ингредиенты</h2>
+                    <p><span>Селедка</span><span class="filler"></span><span>2 шт</span></p>
+                    <p><span>Картошка</span><span class="filler"></span><span>600 гр</span></p>
+                    <p><span>Морковь</span><span class="filler"></span><span>3 шт</span></p>
+                    <p><span>Свекла</span><span class="filler"></span><span>1 шт</span></p>
+                    <p><span>Яблоки</span><span class="filler"></span><span>1 шт</span></p>
+                    <p><span>Лук репчатый</span><span class="filler"></span><span>1 шт</span></p>
+                    <p><span>Яйца</span><span class="filler"></span><span>3 шт</span></p>
+                    <p><span>Майонез</span><span class="filler"></span><span>250 гр</span></p>
+                </div>
+                <div class="info_time"><time class="time">
+                        <p class="all_time" style="grid-row: 1 / 3;">12 ч</p>
+                    </time></div>
+                <div class="recipe_step">
+                    <div class="step">
+                        <h3>ШАГ: 1</h3><img src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/step_1.jpg"
+                            alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_1">
+                        <p>Как сделать классическую селедку под шубой с яблоком? Подготовьте продукты, особенно
+                            внимательно отнеситесь к выбору селёдки. Можете брать и готовое филе, но во вкусе оно
+                            проигрывает, хотя экономит время. Яйца отварите вкрутую 8-9 минут, сразу залейте холодной
+                            водой, так легко будет очистить скорлупу.</p>
+                    </div>
+                    <div class="step">
+                        <h3>ШАГ: 2</h3><img src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/step_2.jpg"
+                            alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_2">
+                        <p>Морковь, свеклу, картофель отварите удобным способом заранее, они нужны будут остывшими.
+                            Овощи можете варить в мундире, я предпочитаю предварительно очистить,так вкус мне нравится
+                            больше. И лучше отваривать на пару, не переваривая. В мультиварке морковь я варю 15 минут,
+                            картофель 20, свеклу 25. Если отвариваю в пароварке, укладываю на нижний лоток свеклу, на
+                            средний - картофель, на верхний - морковь, ставлю таймер на 30 минут, достаю по готовности.
+                        </p>
+                    </div>
+                    <div class="step">
+                        <h3>ШАГ: 3</h3><img src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/step_3.jpg"
+                            alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_3">
+                        <p>Как нарезать рыбу на филе? Отрежьте от тушки голову. Отступая от хвостового плавника,
+                            разрежьте на 0,5см вглубь брюшко. Вычистите внутренности, промойте рыбу под прохладной
+                            водой, хорошо удалите остатки плёнки с брюшка. Обсушите полотенцем и сделайте неглубокий
+                            надрез по спинке, подрезая плавник с двух сторон, также по брюшку до самого хвоста.</p>
+                    </div>
+                    <div class="step">
+                        <h3>ШАГ: 4</h3><img src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/step_4.jpg"
+                            alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_4">
+                        <p>Удалите верхний и хвостовые плавники. Аккуратно подцепите и снимите кожу, мне удобнее это
+                            делать от головы. Затем удалите хребет - большим пальцем проводите вдоль надреза спинки,
+                            остриём ножа помогая освободить большие косточки, потом легко потяните за хребет, он легко
+                            отделится от тушки. Внимательно удалите все косточки, лучше пинцетом.</p>
+                    </div>
+                    <div class="step">
+                        <h3>ШАГ: 5</h3><img src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/step_5.jpg"
+                            alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_5">
+                        <p>Полученное филе нарежьте сначала вдоль на полоски, затем поперёк на удобные вам кусочки. Так
+                            хорошо будут видны оставшиеся косточки, которые легко убрать даже руками.</p>
+                    </div>
+                    <div class="step">
+                        <h3>ШАГ: 6</h3><img src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/step_6.jpg"
+                            alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_6">
+                        <p>Репчатый лук нарежьте мелким кубиком. Если лук сильно острый, можете обдать его кипятком для
+                            удаления лишней горечи. Иногда лук маринуют или слегка обжаривают. Я люблю свежий, выбираю
+                            сочный, сладковатых сортов.</p>
+                    </div>
+                    <div class="step">
+                        <h3>ШАГ: 7</h3><img src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/step_7.jpg"
+                            alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_7">
+                        <p>Если готовите в большом салатнике, овощи натирайте на крупной тёрке прямо в салатник, так у
+                            салата получится более нежный вкус. Если предполагается порционная подача в небольшой
+                            посуде, удобнее все овощи натереть по отдельным мисочкам, затем собирать, чередуя слои.
+                            Первый слой у нас - картофель. Выложите его на дно салатника.</p>
+                    </div>
+                    <div class="step">
+                        <h3>ШАГ: 8</h3><img src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/step_8.jpg"
+                            alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_8">
+                        <p>2-й слой - селёдка, 3-й - лук. Первый два слоя я майонезом не смазываю.</p>
+                    </div>
+                    <div class="step">
+                        <h3>ШАГ: 9</h3><img src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/step_9.jpg"
+                            alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_9">
+                        <p>А вот третий слой, луковый, смажьте майонезом.</p>
+                    </div>
+                    <div class="step">
+                        <h3>ШАГ: 10</h3><img src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/step_10.jpg"
+                            alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_10">
+                        <p>На лук идет 4-й слой - морковь.</p>
+                    </div>
+                    <div class="step">
+                        <h3>ШАГ: 11</h3><img src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/step_11.jpg"
+                            alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_11">
+                        <p>Затем 5-й слой - вареные белки с желтками. Для этого натрите яйца на терке.</p>
+                    </div>
+                    <div class="step">
+                        <h3>ШАГ: 12</h3><img src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/step_12.jpg"
+                            alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_12">
+                        <p>6-й слой - яблоко. Можете взять любое, хоть сладкое, хоть кислое. Не забудьте срезать с
+                            яблока кожуру.</p>
+                    </div>
+                    <div class="step">
+                        <h3>ШАГ: 13</h3><img src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/step_13.jpg"
+                            alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_13">
+                        <p>7-м слоем идет свекла, которая затем смазывается майонезом. Если салатник у вас высокий,
+                            повторите все слои. Но верхний слой всегда будет свекла и майонез. Слои аккуратно
+                            разровняйте. Когда все слои у вас будут выложены в салатник (их толщину выбирайте сами),
+                            закройте посуду пищевой пленкой и поставьте в холодильник для пропитки на 1-2 часа, лучше на
+                            ночь. Перед подачей можете натереть сверху вареный желток, посыпать зеленью.7-м слоем идет
+                            свекла, которая затем смазывается майонезом. Если салатник у вас высокий, повторите все
+                            слои. Но верхний слой всегда будет свекла и майонез. Слои аккуратно разровняйте. Когда все
+                            слои у вас будут выложены в салатник (их толщину выбирайте сами), закройте посуду пищевой
+                            пленкой и поставьте в холодильник для пропитки на 1-2 часа, лучше на ночь. Перед подачей
+                            можете натереть сверху вареный желток, посыпать зеленью.</p>
+                    </div>
+                    <div class="step">
+                        <h3>ШАГ: 14</h3><img src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/step_14.jpg"
+                            alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_14">
+                        <p>Способы подачи и украшения могут быть разными. У меня получились один большой или несколько
+                            средних салатников. Хорошо, когда стенки прозрачные, тогда красиво и аппетитно видны все
+                            слои.</p>
+                    </div>
+                    <div class="step">
+                        <h3>ШАГ: 15</h3><img src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/step_15.jpg"
+                            alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_15">
+                        <p>При порционной подаче в фужерах или креманках также эффектно видно слои. Это не классическая
+                            `шуба`, поэтому со слоями можно импровизировать как душе угодно!</p>
+                    </div>
+                    <div class="step">
+                        <h3>ШАГ: 16</h3><img src="img/recipes/selyodka-pod-shuboi-s-yablokom-i-yaicom/step_16.jpg"
+                            alt="selyodka-pod-shuboi-s-yablokom-i-yaicom_16">
+                        <p>При подаче на блюде или в селёдочнице лучше оформить салат в виде забавной рыбки, такую
+                            подачу очень любят дети и даже и `нелюбимую` свеклу скушают с удовольствием! Приятного
+                            аппетита и весёлых праздников!</p>
+                    </div>
+                </div>
+                <div class="conclusions">
+                    <p>Первая презентация салата состоялась в канун 1919 Нового года ! Автором салата принято считать
+                        купца Анастаса Богомилова /владельца крупнейшей Московско - Тверской сети трактиров и
+                        столовых/.Но придумал его повар Аристарх Прокопцев. Салат подавался как холодная закуска к
+                        спиртному, которая способствовала меньшему опьянению и буйствованию посетителей, в связи с чем
+                        она мгновенно стала самым популярным яством на каждом застолье в неспокойное послереволюционное
+                        время и до наших дней.</p>
+                    <p>Блюдо получится более воздушным, если натирать овощи прямо в салатник, а не в отдельные миски.
+                        Вкус готового блюда во многом зависит от вкуса самой сельди, поэтому лучше покупать не готовое
+                        филе, а именно селёдочку. Как её правильно выбрать ?</p>
+                    <p>1) Смотрим на жабры : тёмно - красные /значит свежая/.</p>
+                    <p>2) Глаза красные - малосольная /такая будет жирная/.</p>
+                    <p>3) Мутные глаза - у икряной /она нежирная, т.к. много двигалась в нерест/.</p>
+                    <p>4) Рот - круглый, маленький - самка - узкий, вытянутый - самец / они вкуснее.</p>
+                    <p>5) При надавливании на тело - оно должно быть упругим.</p>
+                    <p>6) Если на поверхности есть чёрные или рыжие прожилки - рыба долго лежала не в рассоле, а это
+                        плохо.</p>
+                    <p>Если лук горчит, его лучше ошпарить кипятком, можно замариновать. Свеклу надо выбирать с
+                        тёмно-бордовой, более сладкой и нежной мякотью. А картошку брать крахмальную, рассыпчатых
+                        сортов.</p>
+                    <p>Я предлагаю Вариант на тему классического салата. Такой салат в моей семье просят готовить на
+                        каждый Новый Год и надо сказать - не надоел, именно за счёт добавок, которые постоянно меняю.
+                        Могу добавлять красную рыбу, маринованный огурчик, чернослив, сыр, икру.. И конечно подача и
+                        украшение, в виде торта, рулета, с желатином.. Вкус каждый раз будет разным, но таким узнаваемым
+                        и любимым ! Время указываю с учётом подготовки овощей и пропитки в холодильнике.</p>
+                </div>
+        </div> -->
+
+        <div class="side_bar">
+            <p>Популярно сейчас:</p>
+            <ul class="side_categories">
+                <li>
+                    <p><a href="main.html?data-filter=salad">Салаты</a></p>
+                    <ul class="side_subcategories">
+                        <li><a href="main.html?data-filter=salad_chicken">Салат с курицей</a></li>
+                        <li><a href="main.html?data-filter=salad_classic">Классические салаты</a></li>
+                        <li><a href="main.html?data-filter=salad_crab">Крабовый салат</a></li>
+                        <li><a href="main.html?data-filter=salad_herring_under_a_fur_coat">Селедка под шубой</a></li>
+                        <li><a href="main.html?data-filter=salad_pineapple">Салат с ананасами</a></li>
+                        <li><a href="main.html?data-filter=salad_olivier">Салат Оливье</a></li>
+                        <li><a href="main.html?data-filter=salad_caesar">Салат Цезарь</a></li>
+                        <li><a href="main.html?data-filter=salad_squid">Салат из кальмаров</a></li>
+                        <li><a href="main.html?data-filter=salad_cheese">Салат с сыром</a></li>
+                        <li><a href="main.html?data-filter=salad_pineapple_chicken">Салат с ананасами и курицей</a></li>
+                        <li><a href="main.html?data-filter=salad_shrimp">Салат с креветками</a></li>
+                        <li><a href="main.html?data-filter=salad_mimisa">Салат Мимоза</a></li>
+                        <li><a href="main.html?data-filter=salad_cucumber">Салат из огурцов</a></li>
+                        <li><a href="main.html?data-filter=salad_crad_stick">Салат из крабовых палочек</a></li>
+                        <li><a href="main.html?data-filter=salad_egg">Салат с яйцом</a></li>
+                        <li><a href="main.html?data-filter=salad_corn">Салат из кукурузы</a></li>
+                        <li><a href="main.html?data-filter=salad_cabbage">Салат с капустой</a></li>
+                        <li><a href="main.html?data-filter=salad_carrot">Салат из моркови</a></li>
+                        <li><a href="main.html?data-filter=salad_mushrooms">Салат с грибами</a></li>
+                        <li><a href="main.html?data-filter=salad_beans">Салат с фасолью</a></li>
+                        <li><a href="main.html?data-filter=salad_beef">Салат с говядиной</a></li>
+                        <li><a href="main.html?data-filter=salad_sousage">Салат с колбасой</a></li>
+                        <li><a href="main.html?data-filter=salad_fish">Салат с рыбой</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><a href="main.html?data-filter=cake">Торты домашние</a></p>
+                    <ul class="side_subcategories">
+                        <li><a href="main.html?data-filter=cake_cream">Торт с кремом</a></li>
+                        <li><a href="main.html?data-filter=cake_honey">Медовый торт</a></li>
+                    </ul>
+                    </a>
+                </li>
+                <li>
+                    <p><a href="main.html?data-filter=soup">Супы</a></p>
+                    <ul class="side_subcategories">
+                        <li><a href="main.html?data-filter=soup_borsch">Борщ</a></li>
+                        <li><a href="main.html?data-filter=soup_broth">Бульон</a></li>
+                        <li><a href="main.html?data-filter=soup_shchi">Щи</a></li>
+                        <li><a href="main.html?data-filter=soup_solyanka">Солянка</a></li>
+                        <li><a href="main.html?data-filter=soup_mashed">Суп-пюре</a></li>
+                        <li><a href="main.html?data-filter=soup_pickle">Рассольник</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><a href="main.html?data-filter=baking">Выпечка</a></p>
+                    <ul class="side_subcategories">
+                        <li><a href="main.html?data-filter=baking_pies">Пироги</a></li>
+                        <li><a href="main.html?data-filter=baking_cookies">Печенье домашнее</a></li>
+                        <li><a href="main.html?data-filter=baking_pancakes">Блины и блинчики</a></li>
+                        <li><a href="main.html?data-filter=baking_charlotte">Шарлотка</a></li>
+                        <li><a href="main.html?data-filter=baking_cheesecakes">Сырники</a></li>
+                        <li><a href="main.html?data-filter=baking_charlotte_apple">Шарлотка с яблоками</a></li>
+                        <li><a href="main.html?data-filter=baking_buns">Булочки</a></li>
+                        <li><a href="main.html?data-filter=baking_khachapuri">Хачапури</a></li>
+                        <li><a href="main.html?data-filter=baking_pancakes_milk">Блины на молоке</a></li>
+                        <li><a href="main.html?data-filter=baking_draniki">Драники</a></li>
+                        <li><a href="main.html?data-filter=baking_tortillas">Лепешки</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Способы приготовления</p>
+                    <ul class="side_subcategories">
+                        <li><a href="main.html?data-filter=oven">В духовке</a></li>
+                        <li><a href="main.html?data-filter=freezing">Замораживание</a></li>
+                        <li><a href="main.html?data-filter=frying">Жарка</a></li>
+                        <li><a href="main.html?data-filter=frying_pan">На сковороде</a></li>
+                        <li><a href="main.html?data-filter=in_sause">В соусе</a></li>
+                        <li><a href="main.html?data-filter=brew">Варка</a></li>
+                        <li><a href="main.html?data-filter=extinguishing">Тушение</a></li>
+                        <li><a href="main.html?data-filter=for_couple">На пару</a></li>
+                        <li><a href="main.html?data-filter=waffle_iron">В вафельнице</a></li>
+                        <li><a href="main.html?data-filter=kazan">В казане</a></li>
+                        <li><a href="main.html?data-filter=multicooker">В мультиварке</a></li>
+                        <li><a href="main.html?data-filter=deep_fryer">Во фритюре</a></li>
+                        <li><a href="main.html?data-filter=drying">Сушение</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><a href="main.html?data-filter=second_dish">Вторые блюда</a></p>
+                    <ul class="side_subcategories">
+                        <li><a href="main.html?data-filter=second_dish_porridge">Каша</a></li>
+                        <li><a href="main.html?data-filter=second_dish_cutlets">Котлеты</a></li>
+                        <li><a href="main.html?data-filter=second_dish_casserole">Запеканки</a></li>
+                        <li><a href="main.html?data-filter=second_dish_kebabs">Шашлыки</a></li>
+                        <li><a href="main.html?data-filter=second_dish_pilaf">Плов</a></li>
+                        <li><a href="main.html?data-filter=second_dish_steaks">Стейки</a></li>
+                        <li><a href="main.html?data-filter=second_dish_cabbage_role">Голубцы</a></li>
+                        <li><a href="main.html?data-filter=second_dish_omelet">Омлет</a></li>
+                        <li><a href="main.html?data-filter=second_dish_vareniki">Вареники</a></li>
+                        <li><a href="main.html?data-filter=second_dish_porridge_milk">Каша на молоке</a></li>
+                        <li><a href="main.html?data-filter=second_dish_chebureks">Чебуреки</a></li>
+                        <li><a href="main.html?data-filter=second_dish_khinkali">Хинкали</a></li>
+                        <li><a href="main.html?data-filter=second_dish_goulash">Гуляш</a></li>
+                        <li><a href="main.html?data-filter=second_dish_meatballs">Тефтели</a></li>
+                        <li><a href="main.html?data-filter=second_dish_pizza">Пицца</a></li>
+                        <li><a href="main.html?data-filter=second_dish_chops">Отбивные</a></li>
+                        <li><a href="main.html?data-filter=second_dish_gravy">Блюда с подливкой</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><a href="main.html?data-filter=snack">Закуски</a></p>
+                    <ul class="side_subcategories">
+                        <li><a href="main.html?data-filter=snack_tartlets">Тарталетки</a></li>
+                        <li><a href="main.html?data-filter=snack_rolls">Рулеты и рулетики</a></li>
+                        <li><a href="main.html?data-filter=snack_shawarma">Шаурма</a></li>
+                        <li><a href="main.html?data-filter=snack_canapes">Канапе</a></li>
+                        <li><a href="main.html?data-filter=snack_pate">Паштет</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><a href="main.html?data-filter=sandwich">Бутерброды</a></p>
+                </li>
+                <li>
+                    <p><a href="main.html?data-filter=dessert">Десерты</a></p>
+                    <ul class="side_subcategories">
+                        <li><a href="main.html?data-filter=dessert_sherbet">Щербет</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><a href="main.html?data-filter=fats,simple,delicious">Быстро, просто, вкусна</a></p>
+                </li>
+                <li>
+                    <p><a href="main.html?data-filter=garnish">Гарнир</a></p>
+                    <ul class="side_subcategories">
+                        <li><a href="main.html?data-filter=garnish_mash">Пюре</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><a href="main.html?data-filter=work_piece">Загатовка на зиму</a></p>
+                    <ul class="side_subcategories">
+                        <li><a href="main.html?data-filter=work_piece_tomato">Помидоры на зиму</a></li>
+                        <li><a href="main.html?data-filter=work_piece_cabbage">Капуста на зиму</a></li>
+                        <li><a href="main.html?data-filter=work_piece_banks">В банках на зиму</a></li>
+                        <li><a href="main.html?data-filter=work_piece_garlic">Чеснок на зиму</a></li>
+                        <li><a href="main.html?data-filter=work_piece_salad">Салаты на зиму</a></li>
+                        <li><a href="main.html?data-filter=work_piece_jam">Джем на зиму</a></li>
+                        <li><a href="main.html?data-filter=work_piece_lecho">Лечо</a></li>
+                        <li><a href="main.html?data-filter=work_piece_squash_caviar">Кабачковая икра</a></li>
+                        <li><a href="main.html?data-filter=work_piece_carrot">Морковь на зиму</a></li>
+                        <li><a href="main.html?data-filter=work_piece_beet">Свекла на зиму</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><a href="main.html?data-filter=gravy">Соусы</a></p>
+                    <ul class="side_subcategories">
+                        <li><a href="main.html?data-filter=gravy_gravies">Подливки</a></li>
+                        <li><a href="main.html?data-filter=gravy_creamy">Сливочный соус</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="all_categories categories_open">
+                <p>Смотреть весь каталог</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script/registration.js"></script>
+    <script src="script/createRecipe.js"></script>
+    <script src="script/onclick.js"></script>
+
+</body>
+
+</html>

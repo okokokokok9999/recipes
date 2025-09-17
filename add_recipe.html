@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add_ecipes</title>
+    <link rel="stylesheet" href="style/main_bar.css">
+    <link rel="stylesheet" href="style/add_recipe.css">
+    <link rel="stylesheet" href="style/categories.css">
+    <link rel="stylesheet" href="style/registration.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+            <a class="dropbtn" data-filter="all" href="main.html" title="transition_main"><img class="burger_img" src="img/main/burger1.png" alt=""></a>
+            <div class="drop-list">
+                <a href="photo_report.html">Фотоотчеты и комментарии</a>
+                <a href="advice.html">Советы</a>
+                
+                <p>ИНСТРУМЕНТЫ</p>
+
+                <a class="categories_open" href="#">Категории рецептов</a>
+                <a href="product_table.html">Таблицы продуктов</a>
+                <a href="culinary_dictionary.html">Кулинарный словар</a>
+                </ul>
+            </div>
+        </div>
+        
+        <a class="right entrance_open">Войти</a>
+
+        <div class="dropdown right user_icon">
+            <div class="dropbtn drop_img"><img class="user_img" src="img/main/user.png" alt="user"></div>
+            <div class="drop-list drop_end">
+                <a href="my_page.html">Моя страница</a>
+                <a href="add_recipe.html">Добавить рецепт</a>
+                <a href="my_page.html?my_recipe=true">Мои рецепты</a>
+                <a href="my_page.html">Рецептосохранялка</a>
+                <a class="log_out_account">Выйты</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories_fon">
+        <div class="categories">
+            <div class="categories_close">
+                <img src="img/main/close.png" alt="close">
+            </div>
+            <div data-filter="snack"><img src="img/categories/snack.png" alt="snack"><p>Закуски</p></div>
+            <div data-filter="garnish"><img src="img/categories/garnish.png" alt="garnish"><p>Гарнир</p></div>
+            <div data-filter="drinks"><img src="img/categories/drinks.png" alt="drinks"><p>Напитки</p></div>
+            <div data-filter="gravy"><img src="img/categories/gravy.png" alt="gravy"><p>Соусы</p></div>
+            <div data-filter="salad"><img src="img/categories/salad.png" alt="salad"><p>Салаты</p></div>
+            <div data-filter="dessert"><img src="img/categories/dessert.png" alt="dessert"><p>Десерты</p></div>
+            <div data-filter="dough"><img src="img/categories/dough.png" alt="dough"><p>Тесто домашнее</p></div>
+            <div data-filter="baking"><img src="img/categories/baking.png" alt="baking"><p>Выпечка</p></div>
+            <div data-filter="sandwich"><img src="img/categories/sandwich.png" alt="sandwich"><p>Бутерброды</p></div>
+            <div data-filter="cake"><img src="img/categories/cake.png" alt="cake"><p>Торты домашние</p></div>
+            <div data-filter="soup"><img src="img/categories/soup.png" alt="soup"><p>Супы</p></div>
+            <div data-filter="work_piece"><img src="img/categories/work_piece.png" alt="work_piece"><p>Заготовки на зиму</p></div>
+            <div data-filter="second_dish"><img src="img/categories/food_tray.png" alt="second_dish"><p>Вторые блюда</p></div>
+            <hr></hr>
+            <div data-filter="egg"><img src="img/categories/egg.png" alt="egg"><p>яйца</p></div>
+            <div data-filter="berries"><img src="img/categories/cherry.png" alt="berries"><p>Из ягод</p></div>
+            <div data-filter="meat"><img src="img/categories/meat.png" alt="meat"><p>Мясо и мясопродукты</p></div>
+            <div data-filter="nuts"><img src="img/categories/walnut.png" alt="nuts"><p>С орехами</p></div>
+            <div data-filter="semi_finished_product"><img src="img/categories/sausage.png" alt="semi_finished_product"><p>Полуфабрикаты</p></div>
+            <div data-filter="sweet"><img src="img/categories/cupcake.png" alt="sweet"><p>Сладкое</p></div>
+            <div data-filter="fish"><img src="img/categories/fish.png" alt="fish"><p>Из рыбы</p></div>
+            <div data-filter="cereal"><img src="img/categories/cereal.png" alt="cereal"><p>Крупы, злаки, крупяные и зерновые изделия</p></div>
+            <div data-filter="seafood"><img src="img/categories/prawns.png" alt="seafood"><p>С морепродуктами</p></div>
+            <div data-filter="pasta"><img src="img/categories/pasta.png" alt="pasta"><p>Макаронные изделия</p></div>
+            <div data-filter="cheese"><img src="img/categories/cheese.png" alt="cheese"><p>С сыром</p></div>
+            <div data-filter="beans"><img src="img/categories/beans.png" alt="beans"><p>Из бобовых</p></div>
+            <div data-filter="milk"><img src="img/categories/milk_can.png" alt="milk"><p>Молочные продукты</p></div>
+            <div data-filter="breads"><img src="img/categories/breads.png" alt="breads"><p>Хлебобулочные изделия</p></div>
+            <div data-filter="mushrooms"><img src="img/categories/mushrooms.png" alt="mushrooms"><p>Грибы</p></div>
+            <div data-filter="fat"><img src="img/categories/decanter.png" alt="fat"><p>Жир любой</p></div>
+            <div data-filter="vegetable"><img src="img/categories/vegetable.png" alt="vegetable"><p>С овощами</p></div>
+            <div data-filter="alcohol"><img src="img/categories/wine_glass.png" alt="alcohol"><p>Алкоголь</p></div>
+            <div data-filter="flour"><img src="img/categories/flour.png" alt="flour"><p>Из муки</p></div>
+            <div data-filter="fruits"><img src="img/categories/fruits.png" alt="fruits"><p>Фрукты</p></div>
+            <div data-filter="dried_fruits"><img src="img/categories/dried_fruits.png" alt="dried_fruits"><p>Сухофрукты</p></div>
+        </div>
+    </div>
+
+    <div class="registration_fon">
+        <form action="#" method="post" class="entrance">
+            <div class="entrance_close"><img src="img/main/close.png" alt="close" class="registration_close"></div>
+            <p class="registration_text">ВХОД</p>
+            <div class="entrance_input">
+                <label for="entrance_email" class="email_text">Е-майл:</label><input type="email" name="entrance_email" id="entrance_email" title="email" tabindex="1" required>
+                <label for="entrance_password" class="password_text">Пароль:</label><input type="password" name="entrance_password" id="entrance_password" title="password" tabindex="2" required>
+                <p class="entrance_false">Е-майл или пароль введен неправильно</p>
+            </div>
+            <input type="submit" name="entrance_submit" id="entrance_submit" title="entrance_submit" value="Вход" tabindex="3">
+
+            <p class="forgot_password_open">Забыли свой пароль?</p>
+            <p class="registration_open">Еще не зарегистрированы?</p>
+        </form>
+
+        <form action="#" method="post" class="registration">
+            <div class="registration_top"><img src="img/main/back_button.png" alt="back_button" class="registration_back_button"><img src="img/main/close.png" alt="close" class="registration_close"></div>
+            <p class="registration_text">Регистрация на сайте</p>
+            <div class="registration_input">
+                <label for="registration_name">Имя на сайте:</label><input type="text" id="registration_name" name="registration_name" title="registration_name" tabindex="1" required>
+                <label for="registration_email">Е-майл:</label><input type="email" id="registration_email" name="registration_email" title="registration_email" tabindex="2" required>
+                <label for="registration_password">Пароль:</label><input type="password" id="registration_password" name="registration_password" title="registration_password" tabindex="3" required>
+                <label for="registration_confirmation_password">Подтверждение пароля:</label><input type="password" id="registration_confirmation_password" name="registration_confirmation_password" title="registration_confirmation_password" tabindex="4" required>
+                <p class="registration_false"></p>
+            </div>            
+            <center><input type="submit" id="registration_submit" name="registration_submit" title="registration_submit" value="Регистрация"></center>          
+        </form>
+        
+        <form action="#" method="post" class="forgot_password">
+            <div class="registration_top forgot_password_top"><img src="img/main/back_button.png" alt="back_button" class="registration_back_button"><img src="img/main/close.png" alt="close" class="registration_close"></div>
+            <p class="registration_text">Восстановление пароля</p>
+            <p>Введите ваш адрес электронной почты (e-mail) и нажмите на кнопку "Выслать новый пароль".<br> В течение пары минут вы получите на него ссылку для обновления вашего пароля.</p>
+            <label for="forgot_password_input">Введите е-майл:</label><input type="email" id="forgot_password_input" name="forgot_password_input" title="forgot_password_input" required>
+            <input type="submit" id="forgot_password_submit" name="forgot_password_submit" title="forgot_password_submit" value="Выслать ссылку для обновления пароля">
+        </form>
+    </div>
+
+
+    <form class="page" action="#" target="_blank" method="post">
+        <div class="main_content">
+            <input type="text" size="70" placeholder="Введите название рецепта" class="heading" name="heading" tabindex="1" required>
+            <input type="text" size="90" placeholder="Краткое описание рецепта" class="description" name="description" tabindex="2" required>
+            <div class="recipe_img">
+                <label class="main_img_fon" for="main_img"><img class="main_img change_img" src="img/main/add_img.png" alt="img"></label>
+                <input id="main_img" class="input_img" type="file" title="main_img" name="main_img" accept=".jpg, .png, .jpeg" tabindex="3">
+                <label for="other_img1"><img class="other_img change_img" src="img/main/add_img.png" alt="img"></label>
+                <input id="other_img1" class="input_img" type="file" title="other_img" name="other_img1" accept=".jpg, .png, .jpeg" tabindex="4">
+                <label for="other_img2"><img class="other_img change_img" src="img/main/add_img.png" alt="img"></label>
+                <input id="other_img2" class="input_img" type="file" title="other_img" name="other_img2" accept=".jpg, .png, .jpeg" tabindex="5">
+                <label for="other_img3"><img class="other_img change_img" src="img/main/add_img.png" alt="img"></label>
+                <input id="other_img3" class="input_img" type="file" title="other_img" name="other_img3" accept=".jpg, .png, .jpeg" tabindex="6">
+            </div>
+            
+            <div class="composition_fon">
+                <div class="composition">
+                    <h2>Состав / ингредиенты</h2>
+                    <!-- <p><input list="composition_list" type="search" title="composition" class="composition_name" placeholder="Ингредиенты"><span class="filler"></span> <input type="number" title="number" class="composition_number"><select title="measurement" class="measurement"></select></p> -->
+                    <datalist id="composition_list"></datalist>
+                </div>
+                <div class="add_delete">
+                    <img class="add_composition_elem" src="img/main/add.png" alt="add">
+                    <img class="delete_composition_elem" src="img/main/delete.png" alt="delete">
+                </div>
+                <label for="colory" class="calory_fon">
+                    <input type="number" name="calory" id="calory" title="calory" min="0" max="1000" tabindex="81" required>
+                    <p class="calory_text">ккал</p>
+                </label>
+            </div>
+
+            <div class="info_time">
+                <h2>Пошаговое приготовление</h2>
+                <div class="time">
+                    <label for="all_time" class="time_label">Общее время приготовления: 
+                        <input type="time" id="all_time" title="all_time" name="all_time" class="all_time" tabindex="82" required>
+                    </label>
+                    <label for="active_time" class="time_label">Активное время приготовления: 
+                        <input type="time" id="active_time" title="active_time" name="active_time" class="active_time" tabindex="83">
+                    </label>
+                </div>
+            </div>
+
+            <div class="recipe_step">
+                <!-- <div class="step">
+                    <h3>STEP 1</h3>
+                    <label for="step1"><img class="step_img change_img" src="img/main/add_img.png" alt="add_img"></label>
+                    <input id="step1" class="step_input_img input_img" type="file" title="step_img">
+                    <textarea class="step_text" title="step_text" rows="5">Введите текст</textarea>
+                </div> -->
+            </div>
+
+            <div class="add_delete_step">
+                <img class="add_step" src="img/main/add.png" alt="add">
+                <img class="delete_step" src="img/main/delete.png" alt="delete">
+            </div>
+
+            <h2 class="conclusions_heading">Заключения</h2>
+            <div class="conclusions">
+                <!-- <textarea class="conclusions_text" title="conclusions_text" rows="3"></textarea>     -->
+            </div>
+            <div class="add_delete_conclusions">
+                <img class="add_conclusions" src="img/main/add.png" alt="add">
+                <img class="delete_conclusions" src="img/main/delete.png" alt="delete">
+            </div>
+
+            <div class="submit_fon"><button class="submit" type="submit">submit</button></div>
+        </div>
+
+        <div class="side_bar">
+            <p>Выберите категории:</p>
+            <ul class="side_categories" id="select_categories">
+                <li><p><input type="checkbox" name="categories" title="salad" value="salad">Салаты</p>
+                    <ul class="side_subcategories" id="select_subcategories" id="select_subcategories">
+                        <li><input type="checkbox" name="categories" title="salad_chicken" value="salad_chicken">Салат с курицей</li>
+                        <li><input type="checkbox" name="categories" title="salad_classic" value="salad_classic">Классические салаты</li>
+                        <li><input type="checkbox" name="categories" title="salad_crab" value="salad_crab">Крабовый салат</li>
+                        <li><input type="checkbox" name="categories" title="salad_herring_under_a_fur_coat" value="salad_herring_under_a_fur_coat">Селедка под шубой</li>
+                        <li><input type="checkbox" name="categories" title="salad_pineapple" value="salad_pineapple">Салат с ананасами</li>
+                        <li><input type="checkbox" name="categories" title="salad_olivier" value="salad_olivier">Салат Оливье</li>
+                        <li><input type="checkbox" name="categories" title="salad_caesar" value="salad_caesar">Салат Цезарь</li>
+                        <li><input type="checkbox" name="categories" title="salad_squid" value="salad_squid">Салат из кальмаров</li>
+                        <li><input type="checkbox" name="categories" title="salad_cheese" value="salad_cheese">Салат с сыром</li>
+                        <li><input type="checkbox" name="categories" title="salad_pineapple_chicken" value="salad_pineapple_chicken">Салат с ананасами и курицей</li>
+                        <li><input type="checkbox" name="categories" title="salad_shrimp" value="salad_shrimp">Салат с креветками</li>
+                        <li><input type="checkbox" name="categories" title="salad_mimisa" value="salad_mimisa">Салат Мимоза</li>
+                        <li><input type="checkbox" name="categories" title="salad_cucumber" value="salad_cucumber">Салат из огурцов</li>
+                        <li><input type="checkbox" name="categories" title="salad_crad_stick" value="salad_crad_stick">Салат из крабовых палочек</li>
+                        <li><input type="checkbox" name="categories" title="salad_egg" value="salad_egg">Салат с яйцом</li>
+                        <li><input type="checkbox" name="categories" title="salad_corn" value="salad_corn">Салат из кукурузы</li>
+                        <li><input type="checkbox" name="categories" title="salad_cabbage" value="salad_cabbage">Салат с капустой</li>
+                        <li><input type="checkbox" name="categories" title="salad_carrot" value="salad_carrot">Салат из моркови</li>
+                        <li><input type="checkbox" name="categories" title="salad_mushrooms" value="salad_mushrooms">Салат с грибами</li>
+                        <li><input type="checkbox" name="categories" title="salad_beans" value="salad_beans">Салат с фасолью</li>
+                        <li><input type="checkbox" name="categories" title="salad_beef" value="salad_beef">Салат с говядиной</li>
+                        <li><input type="checkbox" name="categories" title="salad_sousage" value="salad_sousage">Салат с колбасой</li>
+                        <li><input type="checkbox" name="categories" title="salad_fish" value="salad_fish">Салат с рыбой</li>
+                    </ul>
+                </li>
+                <li><p><input type="checkbox" name="categories" title="cake" value="cake">Торты домашние</p>
+                    <ul class="side_subcategories" id="select_subcategories">
+                        <li><input type="checkbox" name="categories" title="cake_cream" value="cake_cream">Торт с кремом</li>
+                        <li><input type="checkbox" name="categories" title="cake_honey" value="cake_honey">Медовый торт</li>
+                    </ul>
+                </li>
+                <li><p><input type="checkbox" name="categories" title="soup" value="soup">Супы</p>
+                    <ul class="side_subcategories" id="select_subcategories">
+                        <li><input type="checkbox" name="categories" title="soup_borsch" value="soup_borsch">Борщ</li>
+                        <li><input type="checkbox" name="categories" title="soup_broth" value="soup_broth">Бульон</li>
+                        <li><input type="checkbox" name="categories" title="soup_shchi" value="soup_shchi">Щи</li>
+                        <li><input type="checkbox" name="categories" title="soup_solyanka" value="soup_solyanka">Солянка</li>
+                        <li><input type="checkbox" name="categories" title="soup_mashed" value="soup_mashed">Суп-пюре</li>
+                        <li><input type="checkbox" name="categories" title="soup_pickle" value="soup_pickle">Рассольник</li>
+                    </ul>
+                </li>
+                <li><p><input type="checkbox" name="categories" title="baking" value="baking">Выпечка</p>
+                    <ul class="side_subcategories" id="select_subcategories">
+                        <li><input type="checkbox" name="categories" title="baking_pies" value="baking_pies">Пироги</li>
+                        <li><input type="checkbox" name="categories" title="baking_cookies" value="baking_cookies">Печенье домашнее</li>
+                        <li><input type="checkbox" name="categories" title="baking_pancakes" value="baking_pancakes">Блины и блинчики</li>
+                        <li><input type="checkbox" name="categories" title="baking_charlotte" value="baking_charlotte">Шарлотка</li>
+                        <li><input type="checkbox" name="categories" title="baking_cheesecakes" value="baking_cheesecakes">Сырники</li>
+                        <li><input type="checkbox" name="categories" title="baking_charlotte_apple" value="baking_charlotte_apple">Шарлотка с яблоками</li>
+                        <li><input type="checkbox" name="categories" title="baking_buns" value="baking_buns">Булочки</li>
+                        <li><input type="checkbox" name="categories" title="baking_khachapuri" value="baking_khachapuri">Хачапури</li>
+                        <li><input type="checkbox" name="categories" title="baking_pancakes_milk" value="baking_pancakes_milk">Блины на молоке</li>
+                        <li><input type="checkbox" name="categories" title="baking_draniki" value="baking_draniki">Драники</li>
+                        <li><input type="checkbox" name="categories" title="baking_tortillas" value="baking_tortillas">Лепешки</li>
+                    </ul>
+                </li>
+                <li><p>Способы приготовления</p>
+                    <ul class="side_subcategories" id="select_subcategories">
+                        <li><input type="checkbox" name="categories" title="oven" value="oven">В духовке</li>
+                        <li><input type="checkbox" name="categories" title="freezing" value="freezing">Замораживание</li>
+                        <li><input type="checkbox" name="categories" title="frying" value="frying">Жарка</li>
+                        <li><input type="checkbox" name="categories" title="frying_pan" value="frying_pan">На сковороде</li>
+                        <li><input type="checkbox" name="categories" title="in_sause" value="in_sause">В соусе</li>
+                        <li><input type="checkbox" name="categories" title="brew" value="brew">Варка</li>
+                        <li><input type="checkbox" name="categories" title="extinguishing" value="extinguishing">Тушение</li>
+                        <li><input type="checkbox" name="categories" title="for_couple" value="for_couple">На пару</li>
+                        <li><input type="checkbox" name="categories" title="waffle_iron" value="waffle_iron">В вафельнице</li>
+                        <li><input type="checkbox" name="categories" title="kazan" value="kazan">В казане</li>
+                        <li><input type="checkbox" name="categories" title="multicooker" value="multicooker">В мультиварке</li>
+                        <li><input type="checkbox" name="categories" title="deep_fryer" value="deep_fryer">Во фритюре</li>
+                        <li><input type="checkbox" name="categories" title="drying" value="drying">Сушение</li>
+                    </ul>
+                </li>
+                <li><p><input type="checkbox" name="categories" title="second_dish" value="second_dish">Вторые блюда</p>
+                    <ul class="side_subcategories" id="select_subcategories">
+                        <li><input type="checkbox" name="categories" title="second_dish_porridge" value="second_dish_porridge">Каша</li>
+                        <li><input type="checkbox" name="categories" title="second_dish_cutlets" value="second_dish_cutlets">Котлеты</li>
+                        <li><input type="checkbox" name="categories" title="second_dish_casserole" value="second_dish_casserole">Запеканки</li>
+                        <li><input type="checkbox" name="categories" title="second_dish_kebabs" value="second_dish_kebabs">Шашлыки</li>
+                        <li><input type="checkbox" name="categories" title="second_dish_pilaf" value="second_dish_pilaf">Плов</li>
+                        <li><input type="checkbox" name="categories" title="second_dish_steaks" value="second_dish_steaks">Стейки</li>
+                        <li><input type="checkbox" name="categories" title="second_dish_cabbage_role" value="second_dish_cabbage_role">Голубцы</li>
+                        <li><input type="checkbox" name="categories" title="second_dish_omelet" value="second_dish_omelet">Омлет</li>
+                        <li><input type="checkbox" name="categories" title="second_dish_vareniki" value="second_dish_vareniki">Вареники</li>
+                        <li><input type="checkbox" name="categories" title="second_dish_porridge_milk" value="second_dish_porridge_milk">Каша на молоке</li>
+                        <li><input type="checkbox" name="categories" title="second_dish_chebureks" value="second_dish_chebureks">Чебуреки</li>
+                        <li><input type="checkbox" name="categories" title="second_dish_khinkali" value="second_dish_khinkali">Хинкали</li>
+                        <li><input type="checkbox" name="categories" title="second_dish_goulash" value="second_dish_goulash">Гуляш</li>
+                        <li><input type="checkbox" name="categories" title="second_dish_meatballs" value="second_dish_meatballs">Тефтели</li>
+                        <li><input type="checkbox" name="categories" title="second_dish_pizza" value="second_dish_pizza">Пицца</li>
+                        <li><input type="checkbox" name="categories" title="second_dish_chops" value="second_dish_chops">Отбивные</li>
+                        <li><input type="checkbox" name="categories" title="second_dish_gravy" value="second_dish_gravy">Блюда с подливкой</li>
+                    </ul>
+                </li>
+                <li><p><input type="checkbox" name="categories" title="snack" value="snack">Закуски</p>
+                    <ul class="side_subcategories" id="select_subcategories">
+                        <li><input type="checkbox" name="categories" title="snack_tartlets" value="snack_tartlets">Тарталетки</li>
+                        <li><input type="checkbox" name="categories" title="snack_rolls" value="snack_rolls">Рулеты и рулетики</li>
+                        <li><input type="checkbox" name="categories" title="snack_shawarma" value="snack_shawarma">Шаурма</li>
+                        <li><input type="checkbox" name="categories" title="snack_canapes" value="snack_canapes">Канапе</li>
+                        <li><input type="checkbox" name="categories" title="snack_pate" value="snack_pate">Паштет</li>
+                    </ul>
+                </li>
+                <li><p><input type="checkbox" name="categories" title="sandwich" value="sandwich">Бутерброды</p></li>
+                <li><p><input type="checkbox" name="categories" title="dessert" value="dessert">Десерты</p>
+                    <ul class="side_subcategories" id="select_subcategories">
+                        <li><input type="checkbox" name="categories" title="dessert_sherbet" value="dessert_sherbet">Щербет</li>
+                    </ul>
+                </li>
+                <li><p><input type="checkbox" name="categories" title="fats,simple,delicious" value="fats,simple,delicious">Быстро, просто, вкусна</p></li>
+                <li><p><input type="checkbox" name="categories" title="garnish" value="garnish">Гарнир</p>
+                    <ul class="side_subcategories" id="select_subcategories">
+                        <li><input type="checkbox" name="categories" title="garnish_mash" value="garnish_mash">Пюре</li>
+                    </ul>
+                </li>
+                <li><p><input type="checkbox" name="categories" title="work_piece" value="work_piece">Загатовка на зиму</p>
+                    <ul class="side_subcategories" id="select_subcategories">
+                        <li><input type="checkbox" name="categories" title="work_piece_tomato" value="work_piece_tomato">Помидоры на зиму</li>
+                        <li><input type="checkbox" name="categories" title="work_piece_cabbage" value="work_piece_cabbage">Капуста на зиму</li>
+                        <li><input type="checkbox" name="categories" title="work_piece_banks" value="work_piece_banks">В банках на зиму</li>
+                        <li><input type="checkbox" name="categories" title="work_piece_garlic" value="work_piece_garlic">Чеснок на зиму</li>
+                        <li><input type="checkbox" name="categories" title="work_piece_salad" value="work_piece_salad">Салаты на зиму</li>
+                        <li><input type="checkbox" name="categories" title="work_piece_jam" value="work_piece_jam">Джем на зиму</li>
+                        <li><input type="checkbox" name="categories" title="work_piece_lecho" value="work_piece_lecho">Лечо</li>
+                        <li><input type="checkbox" name="categories" title="work_piece_squash_caviar" value="work_piece_squash_caviar">Кабачковая икра</li>
+                        <li><input type="checkbox" name="categories" title="work_piece_carrot" value="work_piece_carrot">Морковь на зиму</li>
+                        <li><input type="checkbox" name="categories" title="work_piece_beet" value="work_piece_beet">Свекла на зиму</li>
+                    </ul>
+                </li>
+                <li><p><input type="checkbox" name="categories" title="gravy" value="gravy">Соусы</p>
+                    <ul class="side_subcategories" id="select_subcategories">
+                        <li><input type="checkbox" name="categories" title="gravy_gravies" value="gravy_gravies">Подливки</li>
+                        <li><input type="checkbox" name="categories" title="gravy_creamy" value="gravy_creamy">Сливочный соус</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="all_categories categories_open">
+                <p>Смотреть весь каталог</p>
+            </div>
+        </div>
+    </form>
+
+    
+    <script src="script/FileSaver.js-master/FileSaver.js-master/src/FileSaver.js"></script>
+    <!-- <script src="script/data_base.js"></script>     -->
+    <script src="script/addDataBase.js"></script>
+    <script src="script/addRecipe.js"></script>
+    <script src="script/registration.js"></script>
+</body>
+</html>

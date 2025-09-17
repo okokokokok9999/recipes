@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="style/main_bar.css">
+    <link rel="stylesheet" href="style/card.css">
+    <link rel="stylesheet" href="style/categories.css">
+    <link rel="stylesheet" href="style/registration.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+            <a class="dropbtn" data-filter="all" href="main.html" title="transition_main"><img class="burger_img" src="img/main/burger1.png" alt=""></a>
+            <div class="drop-list">
+                <a href="photo_report.html">Фотоотчеты и комментарии</a>
+                <a href="advice.html">Советы</a>
+                
+                <p>ИНСТРУМЕНТЫ</p>
+
+                <a class="categories_open" href="#">Категории рецептов</a>
+                <a href="product_table.html">Таблицы продуктов</a>
+                <a href="culinary_dictionary.html">Кулинарный словар</a>
+                </ul>
+            </div>
+        </div>
+        
+        <a class="right entrance_open">Войти</a>
+
+        <div class="dropdown right user_icon">
+            <div class="dropbtn drop_img"><img class="user_img" src="img/main/user.png" alt="user"></div>
+            <div class="drop-list drop_end">
+                <a href="my_page.html">Моя страница</a>
+                <a href="add_recipe.html">Добавить рецепт</a>
+                <a href="my_page.html?my_recipe=true">Мои рецепты</a>
+                <a href="my_page.html">Рецептосохранялка</a>
+                <a class="log_out_account">Выйты</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories_fon">
+        <div class="categories">
+            <div class="categories_close">
+                <img src="img/main/close.png" alt="close">
+            </div>
+            <div data-filter="snack"><img src="img/categories/snack.png" alt="snack">
+                <p>Закуски</p>
+            </div>
+            <div data-filter="garnish"><img src="img/categories/garnish.png" alt="garnish">
+                <p>Гарнир</p>
+            </div>
+            <div data-filter="drinks"><img src="img/categories/drinks.png" alt="drinks">
+                <p>Напитки</p>
+            </div>
+            <div data-filter="gravy"><img src="img/categories/gravy.png" alt="gravy">
+                <p>Соусы</p>
+            </div>
+            <div data-filter="salad"><img src="img/categories/salad.png" alt="salad">
+                <p>Салаты</p>
+            </div>
+            <div data-filter="dessert"><img src="img/categories/dessert.png" alt="dessert">
+                <p>Десерты</p>
+            </div>
+            <div data-filter="dough"><img src="img/categories/dough.png" alt="dough">
+                <p>Тесто домашнее</p>
+            </div>
+            <div data-filter="baking"><img src="img/categories/baking.png" alt="baking">
+                <p>Выпечка</p>
+            </div>
+            <div data-filter="sandwich"><img src="img/categories/sandwich.png" alt="sandwich">
+                <p>Бутерброды</p>
+            </div>
+            <div data-filter="cake"><img src="img/categories/cake.png" alt="cake">
+                <p>Торты домашние</p>
+            </div>
+            <div data-filter="soup"><img src="img/categories/soup.png" alt="soup">
+                <p>Супы</p>
+            </div>
+            <div data-filter="work_piece"><img src="img/categories/work_piece.png" alt="work_piece">
+                <p>Заготовки на зиму</p>
+            </div>
+            <div data-filter="second_dish"><img src="img/categories/food_tray.png" alt="second_dish">
+                <p>Вторые блюда</p>
+            </div>
+            <hr>
+            </hr>
+            <div data-filter="egg"><img src="img/categories/egg.png" alt="egg">
+                <p>яйца</p>
+            </div>
+            <div data-filter="berries"><img src="img/categories/cherry.png" alt="berries">
+                <p>Из ягод</p>
+            </div>
+            <div data-filter="meat"><img src="img/categories/meat.png" alt="meat">
+                <p>Мясо и мясопродукты</p>
+            </div>
+            <div data-filter="nuts"><img src="img/categories/walnut.png" alt="nuts">
+                <p>С орехами</p>
+            </div>
+            <div data-filter="semi_finished_product"><img src="img/categories/sausage.png" alt="semi_finished_product">
+                <p>Полуфабрикаты</p>
+            </div>
+            <div data-filter="sweet"><img src="img/categories/cupcake.png" alt="sweet">
+                <p>Сладкое</p>
+            </div>
+            <div data-filter="fish"><img src="img/categories/fish.png" alt="fish">
+                <p>Из рыбы</p>
+            </div>
+            <div data-filter="cereal"><img src="img/categories/cereal.png" alt="cereal">
+                <p>Крупы, злаки, крупяные и зерновые изделия</p>
+            </div>
+            <div data-filter="seafood"><img src="img/categories/prawns.png" alt="seafood">
+                <p>С морепродуктами</p>
+            </div>
+            <div data-filter="pasta"><img src="img/categories/pasta.png" alt="pasta">
+                <p>Макаронные изделия</p>
+            </div>
+            <div data-filter="cheese"><img src="img/categories/cheese.png" alt="cheese">
+                <p>С сыром</p>
+            </div>
+            <div data-filter="beans"><img src="img/categories/beans.png" alt="beans">
+                <p>Из бобовых</p>
+            </div>
+            <div data-filter="milk"><img src="img/categories/milk_can.png" alt="milk">
+                <p>Молочные продукты</p>
+            </div>
+            <div data-filter="breads"><img src="img/categories/breads.png" alt="breads">
+                <p>Хлебобулочные изделия</p>
+            </div>
+            <div data-filter="mushrooms"><img src="img/categories/mushrooms.png" alt="mushrooms">
+                <p>Грибы</p>
+            </div>
+            <div data-filter="fat"><img src="img/categories/decanter.png" alt="fat">
+                <p>Жир любой</p>
+            </div>
+            <div data-filter="vegetable"><img src="img/categories/vegetable.png" alt="vegetable">
+                <p>С овощами</p>
+            </div>
+            <div data-filter="alcohol"><img src="img/categories/wine_glass.png" alt="alcohol">
+                <p>Алкоголь</p>
+            </div>
+            <div data-filter="flour"><img src="img/categories/flour.png" alt="flour">
+                <p>Из муки</p>
+            </div>
+            <div data-filter="fruits"><img src="img/categories/fruits.png" alt="fruits">
+                <p>Фрукты</p>
+            </div>
+            <div data-filter="dried_fruits"><img src="img/categories/dried_fruits.png" alt="dried_fruits">
+                <p>Сухофрукты</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="registration_fon">
+        <form action="#" method="post" class="entrance">
+            <div class="entrance_close"><img src="img/main/close.png" alt="close" class="registration_close"></div>
+            <p class="registration_text">ВХОД</p>
+            <div class="entrance_input">
+                <label for="entrance_email" class="email_text">Е-майл:</label><input type="email" name="entrance_email"
+                    id="entrance_email" title="email" tabindex="1" required>
+                <label for="entrance_password" class="password_text">Пароль:</label><input type="password"
+                    name="entrance_password" id="entrance_password" title="password" tabindex="2" required>
+                <p class="entrance_false">Е-майл или пароль введен неправильно</p>
+            </div>
+            <input type="submit" name="entrance_submit" id="entrance_submit" title="entrance_submit" value="Вход"
+                tabindex="3">
+
+            <p class="forgot_password_open">Забыли свой пароль?</p> 
+            <p class="registration_open">Еще не зарегистрированы?</p>
+        </form>
+
+        <form action="#" method="post" class="registration">
+            <div class="registration_top"><img src="img/main/back_button.png" alt="back_button"
+                    class="registration_back_button"><img src="img/main/close.png" alt="close"
+                    class="registration_close"></div>
+            <p class="registration_text">Регистрация на сайте</p>
+            <div class="registration_input">
+                <label for="registration_name">Имя на сайте:</label><input type="text" id="registration_name"
+                    name="registration_name" title="registration_name" tabindex="1" required>
+                <label for="registration_email">Е-майл:</label><input type="email" id="registration_email"
+                    name="registration_email" title="registration_email" tabindex="2" required>
+                <label for="registration_password">Пароль:</label><input type="password" id="registration_password"
+                    name="registration_password" title="registration_password" tabindex="3" required>
+                <label for="registration_confirmation_password">Подтверждение пароля:</label><input type="password"
+                    id="registration_confirmation_password" name="registration_confirmation_password"
+                    title="registration_confirmation_password" tabindex="4" required>
+                <p class="registration_false"></p>
+            </div>
+            <center><input type="submit" id="registration_submit" name="registration_submit" title="registration_submit"
+                    value="Регистрация"></center>
+        </form>
+
+        <form action="#" method="post" class="forgot_password">
+            <div class="registration_top forgot_password_top"><img src="img/main/back_button.png" alt="back_button"
+                    class="registration_back_button"><img src="img/main/close.png" alt="close"
+                    class="registration_close"></div>
+            <p class="registration_text">Восстановление пароля</p>
+            <p>Введите ваш адрес электронной почты (e-mail) и нажмите на кнопку "Выслать новый пароль".<br> В течение
+                пары минут вы получите на него ссылку для обновления вашего пароля.</p>
+            <label for="forgot_password_input">Введите е-майл:</label><input type="email" id="forgot_password_input"
+                name="forgot_password_input" title="forgot_password_input" required>
+            <input type="submit" id="forgot_password_submit" name="forgot_password_submit"
+                title="forgot_password_submit" value="Выслать ссылку для обновления пароля">
+        </form>
+    </div>
+
+    <div class="page">
+        <div class="main_content">
+            <h1 class="heading">Домашние рецепты приготовления блюд с фото</h1>
+        </div>
+
+
+        <div class="side_bar">
+            <p>Популярно сейчас:</p>
+            <ul class="side_categories">
+                <li>
+                    <p data-filter="salad">Салаты</p>
+                    <ul class="side_subcategories">
+                        <li data-filter="salad_chicken">Салат с курицей</li>
+                        <li data-filter="salad_classic">Классические салаты</li>
+                        <li data-filter="salad_crab">Крабовый салат</li>
+                        <li data-filter="salad_herring_under_a_fur_coat">Селедка под шубой</li>
+                        <li data-filter="salad_pineapple">Салат с ананасами</li>
+                        <li data-filter="salad_olivier">Салат Оливье</li>
+                        <li data-filter="salad_caesar">Салат Цезарь</li>
+                        <li data-filter="salad_squid">Салат из кальмаров</li>
+                        <li data-filter="salad_cheese">Салат с сыром</li>
+                        <li data-filter="salad_pineapple_chicken">Салат с ананасами и курицей</li>
+                        <li data-filter="salad_shrimp">Салат с креветками</li>
+                        <li data-filter="salad_mimisa">Салат Мимоза</li>
+                        <li data-filter="salad_cucumber">Салат из огурцов</li>
+                        <li data-filter="salad_crad_stick">Салат из крабовых палочек</li>
+                        <li data-filter="salad_egg">Салат с яйцом</li>
+                        <li data-filter="salad_corn">Салат из кукурузы</li>
+                        <li data-filter="salad_cabbage">Салат с капустой</li>
+                        <li data-filter="salad_carrot">Салат из моркови</li>
+                        <li data-filter="salad_mushrooms">Салат с грибами</li>
+                        <li data-filter="salad_beans">Салат с фасолью</li>
+                        <li data-filter="salad_beef">Салат с говядиной</li>
+                        <li data-filter="salad_sousage">Салат с колбасой</li>
+                        <li data-filter="salad_fish">Салат с рыбой</li>
+                    </ul>
+                </li>
+                <li>
+                    <p data-filter="cake">Торты домашние</p>
+                    <ul class="side_subcategories">
+                        <li data-filter="cake_cream">Торт с кремом</li>
+                        <li data-filter="cake_honey">Медовый торт</li>
+                    </ul>
+                </li>
+                <li>
+                    <p data-filter="soup">Супы</p>
+                    <ul class="side_subcategories">
+                        <li data-filter="soup_borsch">Борщ</li>
+                        <li data-filter="soup_broth">Бульон</li>
+                        <li data-filter="soup_shchi">Щи</li>
+                        <li data-filter="soup_solyanka">Солянка</li>
+                        <li data-filter="soup_mashed">Суп-пюре</li>
+                        <li data-filter="soup_pickle">Рассольник</li>
+                    </ul>
+                </li>
+                <li>
+                    <p data-filter="baking">Выпечка</p>
+                    <ul class="side_subcategories">
+                        <li data-filter="baking_pies">Пироги</li>
+                        <li data-filter="baking_cookies">Печенье домашнее</li>
+                        <li data-filter="baking_pancakes">Блины и блинчики</li>
+                        <li data-filter="baking_charlotte">Шарлотка</li>
+                        <li data-filter="baking_cheesecakes">Сырники</li>
+                        <li data-filter="baking_charlotte_apple">Шарлотка с яблоками</li>
+                        <li data-filter="baking_buns">Булочки</li>
+                        <li data-filter="baking_khachapuri">Хачапури</li>
+                        <li data-filter="baking_pancakes_milk">Блины на молоке</li>
+                        <li data-filter="baking_draniki">Драники</li>
+                        <li data-filter="baking_tortillas">Лепешки</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Способы приготовления</p>
+                    <ul class="side_subcategories">
+                        <li data-filter="oven">В духовке</li>
+                        <li data-filter="freezing">Замораживание</li>
+                        <li data-filter="frying">Жарка</li>
+                        <li data-filter="frying_pan">На сковороде</li>
+                        <li data-filter="in_sause">В соусе</li>
+                        <li data-filter="brew">Варка</li>
+                        <li data-filter="extinguishing">Тушение</li>
+                        <li data-filter="for_couple">На пару</li>
+                        <li data-filter="waffle_iron">В вафельнице</li>
+                        <li data-filter="kazan">В казане</li>
+                        <li data-filter="multicooker">В мультиварке</li>
+                        <li data-filter="deep_fryer">Во фритюре</li>
+                        <li data-filter="drying">Сушение</li>
+                    </ul>
+                </li>
+                <li>
+                    <p data-filter="second_dish">Вторые блюда</p>
+                    <ul class="side_subcategories">
+                        <li data-filter="second_dish_porridge">Каша</li>
+                        <li data-filter="second_dish_cutlets">Котлеты</li>
+                        <li data-filter="second_dish_casserole">Запеканки</li>
+                        <li data-filter="second_dish_kebabs">Шашлыки</li>
+                        <li data-filter="second_dish_pilaf">Плов</li>
+                        <li data-filter="second_dish_steaks">Стейки</li>
+                        <li data-filter="second_dish_cabbage_role">Голубцы</li>
+                        <li data-filter="second_dish_omelet">Омлет</li>
+                        <li data-filter="second_dish_vareniki">Вареники</li>
+                        <li data-filter="second_dish_porridge_milk">Каша на молоке</li>
+                        <li data-filter="second_dish_chebureks">Чебуреки</li>
+                        <li data-filter="second_dish_khinkali">Хинкали</li>
+                        <li data-filter="second_dish_goulash">Гуляш</li>
+                        <li data-filter="second_dish_meatballs">Тефтели</li>
+                        <li data-filter="second_dish_pizza">Пицца</li>
+                        <li data-filter="second_dish_chops">Отбивные</li>
+                        <li data-filter="second_dish_gravy">Блюда с подливкой</li>
+                    </ul>
+                </li>
+                <li>
+                    <p data-filter="snack">Закуски</p>
+                    <ul class="side_subcategories">
+                        <li data-filter="snack_tartlets">Тарталетки</li>
+                        <li data-filter="snack_rolls">Рулеты и рулетики</li>
+                        <li data-filter="snack_shawarma">Шаурма</li>
+                        <li data-filter="snack_canapes">Канапе</li>
+                        <li data-filter="snack_pate">Паштет</li>
+                    </ul>
+                </li>
+                <li>
+                    <p data-filter="sandwich">Бутерброды</p>
+                </li>
+                <li>
+                    <p data-filter="dessert">Десерты</p>
+                    <ul class="side_subcategories">
+                        <li data-filter="dessert_sherbet">Щербет</li>
+                    </ul>
+                </li>
+                <li>
+                    <p data-filter="fats,simple,delicious">Быстро, просто, вкусна</p>
+                </li>
+                <li>
+                    <p data-filter="garnish">Гарнир</p>
+                    <ul class="side_subcategories">
+                        <li data-filter="garnish_mash">Пюре</li>
+                    </ul>
+                </li>
+                <li>
+                    <p data-filter="work_piece">Загатовка на зиму</p>
+                    <ul class="side_subcategories">
+                        <li data-filter="work_piece_tomato">Помидоры на зиму</li>
+                        <li data-filter="work_piece_cabbage">Капуста на зиму</li>
+                        <li data-filter="work_piece_banks">В банках на зиму</li>
+                        <li data-filter="work_piece_garlic">Чеснок на зиму</li>
+                        <li data-filter="work_piece_salad">Салаты на зиму</li>
+                        <li data-filter="work_piece_jam">Джем на зиму</li>
+                        <li data-filter="work_piece_lecho">Лечо</li>
+                        <li data-filter="work_piece_squash_caviar">Кабачковая икра</li>
+                        <li data-filter="work_piece_carrot">Морковь на зиму</li>
+                        <li data-filter="work_piece_beet">Свекла на зиму</li>
+                    </ul>
+                </li>
+                <li>
+                    <p data-filter="gravy">Соусы</p>
+                    <ul class="side_subcategories">
+                        <li data-filter="gravy_gravies">Подливки</li>
+                        <li data-filter="gravy_creamy">Сливочный соус</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="all_categories categories_open">
+                <p>Смотреть весь каталог</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script/data_base.js"></script>
+    <script src="script/createCard.js"></script>
+    <script src="script/onclick.js"></script>
+    <script src="script/registration.js"></script>
+</body>
+
+</html>

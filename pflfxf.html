@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Вкладки</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .tabs {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      background: #eee;
+      margin-right: 5px;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .tab.active {
+      background: #fff;
+      border-bottom: 2px solid white;
+    }
+
+    .tab-content {
+      display: none;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 0 5px 5px 5px;
+      background: #fff;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tabs">
+    <div class="tab active" data-tab="tab1">Вкладка 1</div>
+    <div class="tab" data-tab="tab2">Вкладка 2</div>
+    <div class="tab" data-tab="tab3">Вкладка 3</div>
+  </div>
+
+  <div class="tab-content active" id="tab1">Содержимое вкладки 1</div>
+  <div class="tab-content" id="tab2">Содержимое вкладки 2</div>
+  <div class="tab-content" id="tab3">Содержимое вкладки 3</div>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Удаляем активные классы
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+
+        // Добавляем активные классы
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
