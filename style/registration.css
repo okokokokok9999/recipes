@@ -1,0 +1,203 @@
+.registration_fon {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.736);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.entrance {
+    width: 300px;
+    height: auto;
+    background: white;
+    padding: 25px;
+}
+
+.entrance_close {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: end;
+}
+
+.entrance_close img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+}
+
+.registration_text {
+    width: 100%;
+    height: auto;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.entrance_input {
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+    gap: 30px 0px;
+}
+
+.email_text, .password_text {
+    font-size: 18px;
+    margin-right: 5px;
+    width: 20%;
+    text-wrap: nowrap;
+}
+#email, #password{
+    width: 100%;
+}
+
+.entrance_false {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: #b81313;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+#entrance_submit {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 90px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;   
+    background: rgb(11, 194, 29);
+    color: white;
+    cursor: pointer;
+}
+
+#entrance_submit:hover {
+    background: rgb(48, 150, 48);
+}
+
+.forgot_password_open, .registration_open {
+    margin-top: 10px;
+    text-decoration: underline dotted rgb(20, 20, 187);
+    text-underline-offset: 3px;
+    color: rgb(20, 20, 187);
+    cursor: pointer;
+}
+
+.forgot_password_open:hover, .registration_open:hover {
+    text-decoration-color: red;
+    color: red;
+}
+
+
+
+
+
+.registration {
+    width: 400px;
+    height: auto;
+    background: white;
+    padding: 10px 25px;
+    display: none;
+}
+
+.registration_top {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.registration_back_button {
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    position: relative;
+    left: -18px;
+}
+
+.registration_close {
+    width: 15px;
+    height: 15px;
+    justify-self: end;
+    cursor: pointer;
+    position: relative;
+    right: -14px;
+}
+
+
+.registration_input {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 20px;
+    text-align: end;
+    font-size: 17px;
+}
+
+#registration_submit {
+    margin-top: 25px;
+    width: 130px;
+    height: 50px;
+    font-size: 18px;
+    background: rgb(11, 194, 29);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#registration_submit:hover {
+    background: rgb(48, 150, 48);
+}
+
+.registration_false {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: #b81313;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+
+
+.forgot_password {
+    width: 710px;
+    height: auto;
+    background: white;
+    padding: 10px 25px;
+    display: none;
+}
+
+#forgot_password_input {
+    margin: 25px 10px;
+}
+
+#forgot_password_submit {
+    width: 360px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background: #dcdcdc;
+    cursor: pointer;
+}
+
+#forgot_password_submit:hover {
+    background: #b8b8b8;
+}

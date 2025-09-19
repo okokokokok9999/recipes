@@ -1,0 +1,176 @@
+html body .page {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    margin: 0px 60px;
+}
+
+.heading {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    left: -30px;
+    margin-bottom: 50px;
+    font-family: cursive;
+    font-size: 40px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.main_img {
+    display: block;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.main_img img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    object-fit: cover;
+}
+
+#main_img {
+    display: none;
+}
+
+.user_info_text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.avatar_select_fon {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.736);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.avatar_select {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 30px;
+    width: 750px;
+    height: 650px;
+    background: white;
+    overflow-y: scroll;
+}
+
+.avatar_img {
+    width: 100%;
+    height: auto;
+}
+
+.avatar_img img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.close_avatar_select {
+    display: flex;
+    justify-content: end;
+    grid-column-start: 0;
+    grid-column-end: 4;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
+    left: 210px;
+    margin-bottom: 10px;
+}
+
+
+
+.tabs {
+    padding: 0px 10px 0px 50px;
+    border-collapse: collapse;
+}
+
+.tab_name div{
+    height: 24px;
+    display: inline-flex;
+    border: 1px solid rgb(216, 216, 216);
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 0px;
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    z-index: 2;
+    position: relative;
+}
+
+.tab_name .my_recipe {
+    left: -5px;
+}
+
+.tab_name .no_active {
+    border-bottom: 1px solid rgb(216, 216, 216);
+    background-color: rgb(244, 244, 244);
+}
+
+.tab_content {
+    border: 1px solid rgb(218, 218, 218);
+    padding: 10px;
+    position: relative;
+    top: -2px;
+    z-index: 1;
+}
+
+.my_recipe_content {
+    display: none;
+}
+
+.tab_recipe {
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 15px;
+    padding: 13px 15px 20px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+.tab_recipe:hover {
+    background: #ededed;
+}
+
+.tab_recipe h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.remove_bookmark, .remove_my_recipe {
+    position: absolute;
+    width: 20px;
+    right: 20px;
+    height: 20px;
+    padding: 5px;
+    z-index: 111;
+}
+.remove_bookmark:hover, .remove_my_recipe:hover {
+    background: #b4b4b4;
+}
+.remove_bookmark:active, .remove_my_recipe:active {
+    background: #919191;
+}

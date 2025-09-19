@@ -1,0 +1,57 @@
+.main_content {
+    margin-left: 30px;
+}
+
+.heading {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    left: -30px;
+    margin-bottom: 50px;
+    font-family: cursive;
+    font-size: 40px;
+}
+
+.dictionary_filter {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.dictionary_filter span {
+    padding: 4px;
+    font-weight: 400;
+    color: #084499;
+    text-decoration: underline dotted;
+    cursor: pointer;
+}
+
+.dictionary_filter span:hover {
+    color: red; 
+}
+
+.dictionary_card {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 94%;
+}
+
+.dictionary_heading_card {
+    font-size: 25px;
+    padding: 10px 0px 0px 0px;
+    border-top: 1px solid rgb(191, 191, 191);
+}
+
+.transition_dictionary_page {
+    text-decoration: underline dotted;
+    color: #084499;
+}
+.transition_dictionary_page:hover {
+    color: red;
+}
+
+
+.main_content p {
+    width: 96%;
+    margin-top: 20px;
+}

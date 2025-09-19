@@ -1,0 +1,118 @@
+.main_content {
+    margin-left: 80px;
+}
+
+.heading {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    left: -30px;
+    margin-bottom: 50px;
+    font-family: cursive;
+    font-size: 40px;
+}
+
+.photo_report {
+    border-top: 1px solid rgb(189, 189, 189);
+    width: 85%;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.avatar {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    padding: 20px 0px;
+}
+.avatar_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.avatar_name {
+    font-size: 23px;
+    align-self: center;
+}
+
+.photo_img {
+    display: block;
+    width: 400px;
+    cursor: pointer;
+}
+.photo_img img {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.photo_img div {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    position: relative;
+    top: -3px;
+    border-radius: 0px 0px 10px 10px;
+}
+.photo_img p {
+    font-size: 17px;
+    justify-self: center;
+    align-self: center;
+}
+
+.photo_report_text p {
+    margin-top: 15px;
+}
+
+.my_photo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+.my_photo img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.like_dislike {
+    width: 140px;
+    display: grid;
+    align-items: center;
+    background-color: #f3f3f3;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.like_dislike .like_btn {
+    width: 30px;
+    border-radius: 0px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.like_dislike .dislike_btn {
+    width: 30px;
+    transform: rotate(180deg);
+    border-radius: 0px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.like_btn:hover, .dislike_btn:hover {
+    background-color: #cdcdcd;
+}
+.like_count {
+    color: rgb(61, 164, 61);
+    padding: 10px;
+    background-color: #f3f3f3;
+}
+.like_count::before {
+    content: "+";
+}
+.active_btn {
+    background: #c6c6c6;
+}
+.active_btn:hover {
+    background: #c6c6c6;
+}

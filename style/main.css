@@ -1,0 +1,17 @@
+.main_content {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: 100px;
+    grid-auto-rows: 350px;
+    justify-content: center;
+    
+}
+
+.heading {
+    font-family: cursive;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1.5;
+}

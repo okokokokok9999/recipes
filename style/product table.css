@@ -1,0 +1,65 @@
+.main_content{
+    margin-left: 30px;
+}
+
+.heading {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    left: -30px;
+    margin-bottom: 50px;
+    font-family: cursive;
+    font-size: 40px;
+}
+
+table {
+   width: 95%;
+}
+
+th {
+    padding: 0;
+    margin: 0;
+}
+
+th div{
+    background:#70C3D4;
+    color: white;
+    height: 25px;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+th div:hover {
+    background: #5ca3b1;
+}
+th div:active {
+    background: #47808b;
+}
+
+.active_btn {
+    background: #47808b;
+}
+.active_btn:hover {
+    background: #5ca3b1;
+}
+.active_btn:active {
+    background: #4e7a83
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+    height: 25px;
+}
+
+table td:nth-child(1) {
+    text-align: left;
+}
+
+table td:nth-child(6) {
+    width: 10%;
+}
+
+.col1 {
+    width: 30%;
+}

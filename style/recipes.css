@@ -1,0 +1,232 @@
+.main_content {
+    margin-left: 30px;
+}
+
+.heading {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    left: -30px;
+    margin-bottom: 50px;
+    font-family: cursive;
+    font-size: 40px;
+}
+
+
+
+.recipe_img {
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    float: left;
+}
+
+.recipe_img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.main_img{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+
+
+
+.like_dislike {
+    width: 140px;
+    display: grid;
+    align-items: center;
+    background-color: #f3f3f3;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px;
+    font-size: 17px;
+}
+
+.like_dislike .like_btn {
+    width: 30px;
+    border-radius: 0px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.like_dislike .dislike_btn {
+    width: 30px;
+    transform: rotate(180deg);
+    border-radius: 0px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.like_btn:hover, .dislike_btn:hover, .bookmark_img:hover {
+    background-color: #dfdfdf;
+}
+
+.like_count {
+    color: rgb(61, 164, 61);
+    padding: 10px;
+    background-color: #f3f3f3;
+}
+
+.active_btn {
+    background: #c6c6c6;
+}
+.active_btn:hover {
+    background: #c6c6c6;
+}
+
+
+.bookmark_views {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: 100%;
+    font-size: 17px;
+}
+
+.bookmark {
+    display: flex;
+    float: right;
+    align-items: center;
+    height: 100%;
+    margin: auto;
+}
+
+.bookmark_views .bookmark_img {
+    float: right;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+
+.views {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    float: right;
+}
+
+.views::before {
+    content: "";
+    background-image: url("/Users/77474/Downloads/recipe/img/main/eye.png");
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin: 0px 10px 0px 20px;
+}
+
+
+
+
+.composition {
+    padding-left: 40px;
+    float: left;
+    width: 45%;
+    line-height: 35px;
+    font-size: 16px;
+}
+
+.composition h2 {
+    padding: 0px;
+    margin: 0px 0px 30px 0px;
+}
+
+.composition p {
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+}
+
+.composition p span {
+    text-wrap: nowrap;
+}
+
+.filler {
+    border-bottom: 1px dotted;
+    position: relative;
+    bottom: 10px;
+}
+
+
+
+
+.info_time {
+    display: inline-block;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.info_time h2{
+    font-size: 25px;
+}
+
+.time {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    font-size: 15px;
+}
+
+.time::before {
+    content: "";
+    background-image: url("/Users/77474/Downloads/recipe/img/main/time.png");
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.all_time {
+    display: inline-block;
+    font-weight: 600;
+}
+.all_time::before {
+    content: "Общее время приготовления: ";
+    font-weight: 200;
+}
+
+.active_time {
+    display: inline-block;
+    font-weight: 600;
+}
+.active_time::before {
+    content: "Активное время приготовления: ";
+    font-weight: 200;
+}
+
+
+
+
+.recipe_step {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+.step {
+    margin: 30px 40px;
+}
+
+.step img {
+    border-radius: 10px;
+}
+
+.step p {
+    margin-top: 15px;
+    line-height: 22px;
+}
+
+.conclusions {
+    margin: 30px 40px 40px 40px;
+    white-space: pre-line;
+}
+
+.conclusions p {
+    margin-top: 15px;
+}

@@ -1,0 +1,33 @@
+.page .main_content {
+    margin-left: 30px;
+    grid-auto-rows: 245px;
+}
+
+.main_content p {
+    margin-top: 17px;
+    width: 90%;
+    white-space: pre-line;
+}
+
+.heading {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    left: -30px;
+    margin-bottom: 50px;
+    font-family: cursive;
+    font-size: 40px;
+}
+
+.card {
+    height: 230px;
+}
+
+.card_bottom {
+    padding: 0 15px;
+    height: 90px;
+}
+
+.card_name {
+    padding: 5px 0px 0px 0px;
+}
